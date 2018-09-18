@@ -1,2 +1,4 @@
-Kalle laeb selle faili üles, et testida ühendust. Faili lambineTest.txt sain ilusti kätte ja proovin seda ka muuta.
+﻿Kalle laeb selle faili üles, et testida ühendust. Faili lambineTest.txt sain ilusti kätte ja proovin seda ka muuta.
 Lisaks lähevad üles need näidisfailide põhjal tehtud projekti failid. Me peame nagunii hakkama neid tegema.
+
+Vist mingi aeg peaks hakkama pihta jah, oleks mõistlik :d
