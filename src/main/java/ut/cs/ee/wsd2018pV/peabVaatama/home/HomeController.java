@@ -15,6 +15,10 @@ public class HomeController {
     public String getTestPage() {
         return "home/index";
     }
+    @RequestMapping(path = "/midaiganes2", method = RequestMethod.GET)
+    public String getTest3Page() {
+        return "home/product";
+    }
     // Same as @RequestMapping(method = RequestMethod.GET)
     @GetMapping(path = "/test-dynamic")
     public String getTest2Page(

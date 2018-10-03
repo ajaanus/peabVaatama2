@@ -1,0 +1,452 @@
+body {
+    background: white;
+}
+
+.taust {
+    width: 1000px;
+    background: white;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+/* Logo ja toote nimi */
+
+.header {
+    margin-top: 40px;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 62px;
+    font-weight: bold;
+    color: #ec0928;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Telefoni kujutis */
+
+@keyframes changecolor {
+    0% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    20% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    30% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    70% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    80% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+    100% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+}
+
+@-webkit-keyframes changecolor {
+    0% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    20% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    30% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    70% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    80% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+    100% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+}
+
+@-moz-keyframes changecolor {
+    0% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    20% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    30% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    70% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    80% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+    100% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+}
+
+@-o-keyframes changecolor {
+    0% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    20% { background-image: url(https://i.imgur.com/VDANGXB.png) }
+    30% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    70% { background-image: url(https://i.imgur.com/XM2ZNQU.png) }
+    80% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+    100% { background-image: url(https://i.imgur.com/bEQvqRT.png) }
+}
+
+.opfront {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 80px;
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    transition: transform 800ms;
+    -webkit-transition: transform 800ms;
+    -moz-transition: transform 800ms;
+    -o-transition: transform 800ms;
+}
+
+.opfront:hover {
+    transform: scale(1.1) translateY(-40px);
+    -webkit-transform: scale(1.1) translateY(-40px);
+    -moz-transform: scale(1.1) translateY(-40px);
+    -o-transform: scale(1.1) translateY(-40px);
+}
+
+.opback {
+    position: absolute;
+    height: 480px;
+    width: 236px;
+    margin-left: 90px;
+    margin-top: 80px;
+    transition: transform 800ms;
+    -webkit-transition: transform 800ms;
+    -moz-transition: transform 800ms;
+    -o-transition: transform 800ms;
+    
+    animation-name: changecolor;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+    -webkit-animation-name: changecolor;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    
+    -moz-animation-name: changecolor;
+    -moz-animation-duration: 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    
+    -o-animation-name: changecolor;
+    -o-animation-duration: 12s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-direction: alternate;
+}
+
+.opback:hover {
+    transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    -o-transform: translateX(80px);
+}
+
+/* Värvinimi */
+
+@keyframes colorname {
+    0% { content: "midnight black" }
+    60% { content: "mirror black" }
+    80% { content: "silk white" }
+    100% { content: "silk white" }
+}
+
+@-webkit-keyframes colorname {
+    0% { content: "midnight black" }
+    60% { content: "mirror black" }
+    80% { content: "silk white" }
+    100% { content: "silk white" }
+}
+
+@-moz-keyframes colorname {
+    0% { content: "midnight black" }
+    60% { content: "mirror black" }
+    80% { content: "silk white" }
+    100% { content: "silk white" }
+}
+
+@-o-keyframes colorname {
+    0% { content: "midnight black" }
+    60% { content: "mirror black" }
+    80% { content: "silk white" }
+    100% { content: "silk white" }
+}
+
+.colorpicker {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    transform: translateY(-24px);
+    -webkit-transform: translateY(-24px);
+    -moz-transform: translateY(-24px);
+    -o-transform: translateY(-24px);
+}
+
+.currentcolor:before {
+    content: "current_color";
+    color: #ec0928;
+    margin-left: 5px;
+    
+    animation-name: colorname;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+    -webkit-animation-name: colorname;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    
+    -moz-animation-name: colorname;
+    -moz-animation-duration: 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    
+    -o-animation-name: colorname;
+    -o-animation-duration: 12s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-direction: alternate;
+}
+
+/* Tutvustus */
+
+.intro {
+    position: absolute;
+    width: 500px;
+    text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    transform: translate(450px, -5500px);
+    -webkit-transform: translate(450px, -550px);
+    -moz-transform: translate(450px, -550px);
+    -o-transform: translate(450px, -550px);
+}
+
+#bold {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#op6 {
+    color: #ec0928;
+}
+
+/* Kirjeldus */
+
+.aboutlogo {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    width: 80px;
+    height: 80px;
+    transform: translate(440px, -230px);
+    -webkit-transform: translate(440px, -230px);
+    -moz-transform: translate(440px, -230px);
+    -o-transform: translate(440px, -230px);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.aboutlogo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.about {
+    position: absolute;
+    background: white;
+    width: 500px;
+    height: 300px;
+    text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    transform: translate(10px, -405px);
+    -webkit-transform: translate(10px, -405px);
+    -moz-transform: translate(10px, -405px);
+    -o-transform: translate(10px, -405px);
+    transition: opacity 900ms;
+    -webkit-transition: opacity 900ms;
+    -moz-transition: opacity 900ms;
+    -o-transition: opacity 900ms;
+}
+
+.aboutlogo:hover .about {
+    opacity: 1;
+}
+
+/* Tehnilised andmed */
+
+.specslogo {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    width: 80px;
+    height: 80px;
+    transform: translate(540px, -310px);
+    -webkit-transform: translate(540px, -310px);
+    -moz-transform: translate(540px, -310px);
+    -o-transform: translate(540px, -310px);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.specslogo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+} 
+
+.specs {
+    position: absolute;
+    background: white;
+    width: 500px;
+    height: 321px;
+    text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    transform: translate(-90px, -405px);
+    -webkit-transform: translate(-90px, -405px);
+    -moz-transform: translate(-90px, -405px);
+    -o-transform: translate(-90px, -405px);
+    transition: opacity 900ms;
+    -webkit-transition: opacity 900ms;
+    -moz-transition: opacity 900ms;
+    -o-transition: opacity 900ms;
+}
+
+.specslogo:hover .specs {
+    opacity: 1;
+}
+
+td {
+    vertical-align: sub;
+    width: 100px;
+    text-align: left;
+    padding-bottom: 18px;
+}
+
+/* Kaart */
+
+.maplogo {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    width: 80px;
+    height: 80px;
+    transform: translate(640px, -390px);
+    -webkit-transform: translate(640px, -390px);
+    -moz-transform: translate(640px, -390px);
+    -o-transform: translate(640px, -390px);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.maplogo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+} 
+
+.map {
+    position: absolute;
+    background: white;
+    width: 500px;
+    height: 321px;
+    text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    transform: translate(-190px, -405px);
+    -webkit-transform: translate(-190px, -405px);
+    -moz-transform: translate(-190px, -405px);
+    -o-transform: translate(-190px, -405px);
+    transition: opacity 900ms;
+    -webkit-transition: opacity 900ms;
+    -moz-transition: opacity 900ms;
+    -o-transition: opacity 900ms;
+}
+
+.maplogo:hover .map {
+    opacity: 1;
+}
+
+/* Video */
+
+.videologo {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    width: 80px;
+    height: 80px;
+    transform: translate(740px, -470px);
+    -webkit-transform: translate(740px, -470px);
+    -moz-transform: translate(740px, -470px);
+    -o-transform: translate(740px, -470px);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.videologo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+} 
+
+.video {
+    position: absolute;
+    background: white;
+    width: 500px;
+    height: 321px;
+    text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    transform: translate(-290px, -405px);
+    -webkit-transform: translate(-290px, -405px);
+    -moz-transform: translate(-290px, -405px);
+    -o-transform: translate(-290px, -405px);
+    transition: opacity 900ms;
+    -webkit-transition: opacity 900ms;
+    -moz-transition: opacity 900ms;
+    -o-transition: opacity 900ms;
+}
+
+.videologo:hover .video {
+    opacity: 1;
+}
+
+/* Footer */
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(#ec0928, #cc0a0a);
+    box-shadow: 0px -3px 6px #ddd;
+    margin-top: -300px;
+    overflow: hidden;
+}
+
+.optext {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.staret {
+    width: 300px;
+    text-align: right;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    transform: translate(690px, -34px);
+    -webkit-transform: translate(690, -34px);
+    -moz-transform: translate(690, -34px);
+    -o-transform: translate(690, -34px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
