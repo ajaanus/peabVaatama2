@@ -13,13 +13,27 @@ public class HomeController {
     public String getTestPage() {
         return "home/index";
     }
+
+    @RequestMapping(path = "/product", method = RequestMethod.GET)
+    public String getPhonePage() {
+        return "home/product";
+    }
+
+    @RequestMapping(path = "/contact", method = RequestMethod.GET)
+    public String getContactPage() {
+        return "home/contact";
+    }
+
     // Same as @RequestMapping(method = RequestMethod.GET)
     @GetMapping(path = "/test-dynamic")
     public String getTest2Page(
-            @RequestParam(value="name-from-url",
-                    required=false,
-                    defaultValue="World") String nameFromUrl, Model model) {
+            @RequestParam(value = "name-from-url",
+                    required = false,
+                    defaultValue = "World") String nameFromUrl, Model model) {
         model.addAttribute("nameTemplate", nameFromUrl);
         return "home/index_dynamic";
     }
+
+
 }
+
