@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="et" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <link type="text/css" rel="stylesheet" href="/css/contact.css"/>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -19,16 +19,19 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value=""/>
+                    <input type="text" name="perenimi" class="form-control" placeholder="Perenimi *" value=""/>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value=""/>
+                    <input type="text" name="eesnimi" class="form-control" placeholder="Eesnimi *" value=""/>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value=""/>
+                    <input type="text" name="epost" class="form-control" placeholder="E-post *" value=""/>
                 </div>
                 <div class="form-group">
-                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message"/>
+                    <input type="text" name="txtPhone" class="form-control" placeholder="Telefoninumber " value=""/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btnSubmit" class="btnContact" value="Saada"/>
                 </div>
 
                 <div class="form-group">
@@ -38,6 +41,12 @@
             </div>
         </div>
     </form>
+    <div class="row">
+        <ul>
+            <li th:each="kasutaja : ${kasutajad}" th:text="${kasutaja.getPerenimi()}"></li>
+        </ul>
+
+    </div>
 </div>
 </body>
 </html>

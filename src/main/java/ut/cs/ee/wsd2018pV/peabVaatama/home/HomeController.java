@@ -19,10 +19,10 @@ public class HomeController {
         return "home/product";
     }
 
-    @RequestMapping(path = "/contact", method = RequestMethod.GET)
-    public String getContactPage() {
-        return "home/contact";
-    }
+//    @RequestMapping(path = "/contact", method = RequestMethod.GET)
+//    public String getContactPage() {
+  //      return "home/contact";
+//    }
 
     // Same as @RequestMapping(method = RequestMethod.GET)
     @GetMapping(path = "/test-dynamic")
